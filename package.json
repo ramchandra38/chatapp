@@ -2,6 +2,10 @@
   "name": "react-chat-tutorial",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.9.0",
+    "node": "10.6.3"
+  },
   "dependencies": {
     "@pusher/chatkit-client": "^1.12.1",
     "@pusher/chatkit-server": "^2.1.0",
@@ -15,7 +19,7 @@
     "concurrently": "^3.5.1"
   },
   "scripts": {
-    "start": "set PORT=3006 && concurrently \"node ./server.js\" \"react-scripts start\"",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
